@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: whitesmoke;
+    font-family: 'Roboto',sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+}
+/* body */
+body{
+    background: #001421;
+    font-family: 'Roboto',sans-serif;
+}
+/* header */
+
+
+nav{
+    background-color: #990001;
+    
+}
+nav ul li{
+    display: inline-block;
+    padding: 5px;
+    font-size: 15px;
+}
+
+
+/* main */
+main{
+    background: #001421;
+    text-align: center;
+    overflow: hidden;
+}
+.sec-titulo{
+    font-family: 'Roboto',sans-serif;
+    font-size: 50px;
+    margin: 15px;
+}
+
+
+/* Seccion noticias cards */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+}
+@media (min-width: 1085px) {
+    .cards {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+
+
+/* Corresponde a todos los html */
+.caja {
+    padding: 15px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto; 
+}
+
+
+
+/* Seccion noticias micard */
+.micard {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        'area1'
+        'area2'
+        'area3'
+        'area4'
+        'area5';
+    gap: 15px;
+    padding-top: 30px;
+}
+
+@media (min-width: 964px) {
+    .micard {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            'area1 area2'
+            'area3 area4'
+            'area5 area5';
+    }
+}
+@media (min-width: 1085px) {
+    .micard {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            'area1 area1 area2 area2'
+            'area3 area3 area4 area4'
+            'area5 area5 area5 area5';
+    }
+}
+@media (min-width: 1461px) {
+    .micard {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            'area1 area2 area5'
+            'area3 area4 area5';
+    }
+}
+
+.c1{
+    grid-area: area1;
+}
+.c2{
+    grid-area: area2;
+}
+.c3{
+    grid-area: area3;
+}
+.c4{
+    grid-area: area4;
+}
+.c5{
+    grid-area: area5;
+}
+
+
+/* Card seccion noticias solo texto */
+.micard-text{
+    background-color: #fff;
+    margin: 10px;
+    padding: 5px;
+    border: 5px #990001 solid;
+    border-radius: 20px;
+    color: #000000;
+}
+
+
+/* Seccion pilotos */
+.card-body h2{
+    font-family: 'Roboto',sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.cardpiloto{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        'area1'
+        'area2'
+        'area3'
+        'area4'
+        'area5'
+        'area6'
+        'area7'
+        'area8';
+    gap: 15px;
+}
+@media (min-width: 630px) {
+    .cardpiloto {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            'area1 area2'
+            'area3 area4'
+            'area5 area6'
+            'area7 area8';
+    }
+}
+@media (min-width: 900px) {
+    .cardpiloto {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            'area1 area2 area3'
+            'area4 area5 area6'
+            'area7 area8 none';
+    }
+}
+@media (min-width: 1280px) {
+    .cardpiloto {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            'area1 area2 area3 area4'
+            'area5 area6 area7 area8';
+    }
+}
+
+
+.p1{
+    grid-area: area1;
+}
+.p2{
+    grid-area: area2;
+}
+.p3{
+    grid-area: area3;
+}
+.p4{
+    grid-area: area4;
+}
+.p5{
+    grid-area: area5;
+}
+.p6{
+    grid-area: area6;
+}
+.p7{
+    grid-area: area7;
+}
+.p8{
+    grid-area: area8;
+}
+
+
+
+/* Seccion equipos */
+.cardequipos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        'area1'
+        'area2'
+        'area3'
+        'area4'
+        'area5'
+        'area6'
+        'area7'
+        'area8'
+        'area9'
+        'area10';
+    gap: 15px;
+    padding-top: 30px;
+}
+@media (min-width: 630px) {
+    .cardequipos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            'area1 area2'
+            'area3 area4'
+            'area5 area6'
+            'area7 area8'
+            'area9 area10';
+    }
+}
+@media (min-width: 1080px) {
+    .cardequipos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            'area1 area2 area3'
+            'area4 area5 area6'
+            'area7 area8 area9'
+            'area10 none none';
+    }
+}
+.t1{
+    grid-area: area1;
+}
+.t2{
+    grid-area: area2;
+}
+.t3{
+    grid-area: area3;
+}
+.t4{
+    grid-area: area4;
+}
+.t5{
+    grid-area: area5;
+}
+.t6{
+    grid-area: area6;
+}
+.t7{
+    grid-area: area7;
+}
+.t8{
+    grid-area: area8;
+}
+.t9{
+    grid-area: area9;
+}
+.t10{
+    grid-area: area10;
+}
+
+
+/* Seccion calendario */
+.card-calendario{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        'area1'
+        'area2'
+        'area3'
+        'area4'
+        'area5'
+        'area6'
+        'area7';
+    gap: 15px;
+    padding-top: 30px;
+}
+@media (min-width: 630px) {
+    .card-calendario {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            'area1 area1'
+            'area2 area3'
+            'area4 area5'
+            'area6 area7';
+    }
+}
+@media (min-width: 1080px) {
+    .card-calendario {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            'area1 area2 area3'
+            'area1 area4 area5'
+            'none area6 area7';
+    }
+}
+.cal1{
+    grid-area: area1;
+}
+.cal2{
+    grid-area: area2;
+}
+.cal3{
+    grid-area: area3;
+}
+.cal4{
+    grid-area: area4;
+}
+.cal5{
+    grid-area: area5;
+}
+.cal6{
+    grid-area: area6;
+}
+.cal7{
+    grid-area: area7;
+}
+
+
+/* Seccion horarios de calendario */
+.card-horario{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        'area1'
+        'area2'
+        'area3'
+        'area4'
+        'area5'
+        'area6'
+        'area7';
+    gap: 15px;
+    padding-top: 30px;
+}
+@media (min-width: 540px) {
+    .card-horario {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            'area1 area2'
+            'area3 area4'
+            'area5 area6'
+            'area7 none';
+    }
+}
+@media (min-width: 735px) {
+    .card-horario {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            'area1 area2 area3'
+            'area4 area5 area6'
+            'area7 none none';
+    }
+}
+@media (min-width: 1080px) {
+    .card-horario {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            'area1 area2 area3 area4'
+            'area5 area6 area7 none';
+    }
+}
+.d1{
+    grid-area: area1;
+}
+.d2{
+    grid-area: area2;
+}
+.d3{
+    grid-area: area3;
+}
+.d4{
+    grid-area: area4;
+}
+.d5{
+    grid-area: area5;
+}
+.d6{
+    grid-area: area6;
+}
+.d7{
+    grid-area: area7;
+}
+
+
+
+
+/* Seccion about */
+.card-about{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    padding-top: 30px;
+}
+.card-about img{
+    display: flex;
+}
+.card-about h2 , .card-about p{
+    padding: 10px; 
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+}
+
+
+/* footer */
+footer{
+    background: #990001;
+    width: 100%;
+    text-align: center;
+    /* position: absolute;
+    bottom: 100;
+    left: 0;  */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p{
+    color: #000000;
+    font-family: 'Roboto',sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+footer ul li{
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+}
+.footer-links{
+    color: #000000;
+    font-family: 'Roboto',sans-serif;
+    font-size: 30px;
+}
